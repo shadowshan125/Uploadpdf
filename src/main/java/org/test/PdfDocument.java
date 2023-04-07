@@ -12,7 +12,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties({ "id" })
 @MongoEntity(collection = "pdf_documents", database = "Project")
 public class PdfDocument extends PanacheMongoEntity {
-    String documentId;
-    public String filename;
+    public String documentId;
+    public String name;
     public Binary data;
 }
